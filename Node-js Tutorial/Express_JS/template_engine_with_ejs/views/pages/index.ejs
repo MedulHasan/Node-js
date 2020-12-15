@@ -6,22 +6,22 @@
 <%= new Date().toString() %>
 
 <% if(posts.length === 0) { %>
-<h3>we hane no post</h3>
+    <h3>we hane no posts</h3>
 <% } else { %>
-<ul>
-    <% for(let p of posts) { %>
-    <li>
-        <%= p.title %> By <%= p.name %>
-    </li>
-    <% } %>
-</ul>
+    <ul>
+        <% for(let p of posts) { %>
+            <li>
+                <%= p.title %> By <%= p.name %>
+            </li>
+        <% } %>
+    </ul>
 <% } %>
 
 <% if(post.publish) { %>
-<h3>body: <%= post.body %></h3>
-<p>title: <%= post.title %> </p>
+    <h3>body: <%= post.body %></h3>
+    <p>title: <%= post.title %> </p>
 <% } else { %>
-<h3>Not inserted</h3>
+    <h3>Not inserted</h3>
 <% } %>
 
 
