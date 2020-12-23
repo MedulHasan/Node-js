@@ -14,9 +14,9 @@ app.use(express.json())
 
 app.use('/contacts', router)
 
-app.get('/', (req, res) => {
+// app.get('/', (req, res) => {
    
-})
+// })
 
 const PORT = process.env.PORT || 8080
 mongoose
