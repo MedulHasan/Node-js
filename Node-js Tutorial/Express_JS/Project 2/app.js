@@ -14,10 +14,6 @@ app.use(express.json())
 
 app.use('/contacts', router)
 
-// app.get('/', (req, res) => {
-   
-// })
-
 const PORT = process.env.PORT || 8080
 mongoose
     .connect(`mongodb+srv://user1:pass1@cluster0.wa1q4.mongodb.net/dbtest1?retryWrites=true&w=majority`, {
