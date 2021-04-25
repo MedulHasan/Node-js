@@ -1,9 +1,9 @@
 const fs = require('fs')
 const http = require('http')
 
-const server = http.createServer((reqst, res) => {
+const server = http.createServer((req, res) => {
     fs.readFile('./index.html', (err, data) => {
-        if(err) {
+        if (err) {
             console.log(err);
         }
 

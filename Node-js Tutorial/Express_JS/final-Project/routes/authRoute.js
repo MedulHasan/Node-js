@@ -20,5 +20,5 @@ router.get('/login',isUnAuthenticated, loginGetController)
 router.post('/login',isUnAuthenticated, loginValidator, loginPostController)
 
 router.get('/logout', logoutController)
-
+  
 module.exports = router

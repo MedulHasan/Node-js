@@ -5,14 +5,14 @@ const testObj = {
     email: 'medul@gmail.com',
     address: {
         city: 'pabna',
-        country: 'BD'
+        country: 'Bangladesh'
     }
 }
 
 const data = JSON.stringify(testObj)
 
 fs.writeFile('./test.json', data, (err) => {
-    if(err) {
+    if (err) {
         console.log(err);
     } else {
         console.log('File write successfully');
